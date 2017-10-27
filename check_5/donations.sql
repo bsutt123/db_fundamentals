@@ -1,4 +1,4 @@
-DROp TABLE donations;
+DROP TABLE donations;
 
 CREATE TABLE donations(
 	id integer primary key,
