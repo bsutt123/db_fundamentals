@@ -29,5 +29,9 @@ SELECT * FROM adoptions ORDER BY date LIMIT 5;
 
 SELECT * FROM cats WHERE age >= 2 GROUP BY gender HAVING gender = 'F';
 
-SELECT donor FROM donations GROUP BY donor ORDER BY SUM(amount) LIMIT 5;
+SELECT donor FROM donations GROUP BY donor ORDER BY SUM(amount) DESC LIMIT 5;
+
+SELECT donor FROM donations GROUP BY donor ORDER BY SUM(amount) DESC LIMIT 10 OFFSET 5;
+
+
 
