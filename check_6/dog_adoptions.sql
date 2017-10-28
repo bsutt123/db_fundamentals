@@ -11,14 +11,15 @@ CREATE TABLE dogs (
 	weight integer,
 	intake_date date,
 	breed text,
-	in_foster boolean
+	in_foster boolean,
+	adopted boolean
 );
 
 INSERT INTO dogs VALUES
-	(1, 'Thunder', 'F', 3, 35, '2015-04-10', 'pitbull french bulldog', true),
-	(2, 'Bolt', 'M', 1, 75, '2017-01-01', 'labrador mix', true),
-	(3, 'Buster', 'M', 4, 66, '2017-02-03', 'border collie', false),
-	(4, 'Sophie', 'F', 6, 54, '2017-10-12', 'pointer', false);
+	(1, 'Thunder', 'F', 3, 35, '2015-04-10', 'pitbull french bulldog', false, true),
+	(2, 'Bolt', 'M', 1, 75, '2017-01-01', 'labrador mix', false, true),
+	(3, 'Buster', 'M', 4, 66, '2017-02-03', 'border collie', true, false),
+	(4, 'Sophie', 'F', 6, 54, '2017-10-12', 'pointer', true, false);
 
 
 
