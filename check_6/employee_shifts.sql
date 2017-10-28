@@ -1,5 +1,5 @@
-DROP TABLE employees;
-DROP TABLE shifts;
+DROP TABLE employees CASCADE;
+DROP TABLE shifts CASCADE;
 
 CREATE TABLE employees(
 	id INTEGER PRIMARY KEY,
@@ -26,7 +26,7 @@ INSERT INTO shifts (id, start, finish) VALUES
 	(1, '8:00', '15:30'),
 	(2, '10:00', '14:00'),
 	(3, '7:00',  '17:00'),
-	(4,, '15:00', '23:00');
+	(4,'15:00', '23:00');
 
 
 
