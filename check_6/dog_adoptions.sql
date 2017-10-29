@@ -19,7 +19,7 @@ INSERT INTO dogs VALUES
 	(1, 'Thunder', 'F', 3, 35, '2015-04-10', 'pitbull french bulldog', false, true),
 	(2, 'Bolt', 'M', 1, 75, '2017-01-01', 'labrador mix', false, true),
 	(3, 'Buster', 'M', 4, 66, '2017-02-03', 'border collie', true, false),
-	(4, 'Sophie', 'F', 6, 54, '2017-10-12', 'pointer', true, false);
+	(4, 'Sophie', 'F', 6, 54, '2017-10-12', 'pointer', false, false);
 
 
 
@@ -48,10 +48,10 @@ CREATE TABLE volunteers(
 	foster_id INTEGER REFERENCES dogs(id)
 );
 
-INSERT INTO volunteers (id, name, address, phone_number, available_to_foster) VALUES 
-	(1, 'Jackie', 'hi there','123-454-5434',true),
-	(2, 'Bill', 'jack sparrow drive', '345-555-5555', true),
-	(3, 'John', 'Nighty night', '777-777-7777', true);
+INSERT INTO volunteers (id, name, address, phone_number, available_to_foster, foster_id) VALUES 
+	(1, 'Jackie', 'hi there','123-454-5434',true, NULL),
+	(2, 'Bill', 'jack sparrow drive', '345-555-5555', false, 3),
+	(3, 'John', 'Nighty night', '777-777-7777', false, NULL);
 
 
 CREATE TABLE adoptions(
