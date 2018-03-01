@@ -1,3 +1,5 @@
+/* Question 8 */
+
 SELECT * FROM volunteers LEFT JOIN dogs ON volunteers.foster_id = dogs.id;
 
 SELECT adopters.name AS adopter_name, dogs.name AS dog_name 
@@ -21,4 +23,17 @@ SELECT * FROM volunteers
 FULL OUTER JOIN dogs
 ON volunteers.foster_id = dogs.id
 WHERE volunteers.id IS NOT NULL
-OR dogs.in_foster = false;
+OR dogs.in_foster = false
+AND dogs.adopted = false;
+
+/* Question 9 */
+
+SELECT adopter.name, cats.name FROM adopter
+JOIN adoptions
+ON adoptions.adopter = adopter.id
+JOIN adoptions
+ON adoptions.cat = cats.id
+WHERE cat = "Seashell";
+
+/* Question 10 */
+
