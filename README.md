@@ -1,0 +1,1 @@
+This was completed as part of my Bloc Curriculum for Software Engineering Principals, particular the module that dealt with the use of SQL to create queries for databases. While the code was not intended to be used outside of the confines of the problem sets given, I can provide you with the problems and what queries were written to produce if you like.
